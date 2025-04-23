@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝 Create a New Class"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Class Name -->
+        <EditText
+            android:id="@+id/edtClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class Name"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Category -->
+        <EditText
+            android:id="@+id/edtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Time -->
+        <EditText
+            android:id="@+id/edtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time (e.g. 10:00 AM)"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Class"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

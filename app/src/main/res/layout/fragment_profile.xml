@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome Header -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Avatar and Change Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/avatar_circle_bg"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/btnChangeAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Avatar"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Info Summary Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferences: "
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvBookingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookings Made: "
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Editable Fields -->
+        <EditText
+            android:id="@+id/edtName"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:hint="Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save Changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="32dp" />
+
+        <!-- QR Code Button (visible only for learners) -->
+        <Button
+            android:id="@+id/btnShowQRCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show QR Code"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Section: My Queries -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Community Queries"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutMyQueries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Query FAB inside the same LinearLayout -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAskQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_question"
+            android:contentDescription="Ask Admin"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

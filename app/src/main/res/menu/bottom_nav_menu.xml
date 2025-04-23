@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <!-- Option 1: Search (Learner) / My Classes (Coach) / Users (Admin) -->
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="Option 1" />
+
+    <!-- Option 2: Bookings (Learner) / Add Class (Coach) / Reports (Admin) -->
+    <item
+        android:id="@+id/nav_bookings"
+        android:icon="@drawable/ic_bookings"
+        android:title="Option 2" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+
+    <!-- Option 3: History (Learner only) or could be hidden for others -->
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="History" />
+</menu>

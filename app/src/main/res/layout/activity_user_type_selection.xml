@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FAFAFA"
+    android:padding="32dp">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👤 Choose User Type"
+        android:textSize="24sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your role to begin registration"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="36dp"/>
+
+    <!-- Admin -->
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛡 Register as Admin"
+        android:background="@drawable/btn_admin"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="4dp"/>
+
+    <!-- Coach -->
+    <Button
+        android:id="@+id/btnCoach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏋️ Register as Coach"
+        android:background="@drawable/btn_coach"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Learner -->
+    <Button
+        android:id="@+id/btnLearner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎓 Register as Learner"
+        android:background="@drawable/btn_learner"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

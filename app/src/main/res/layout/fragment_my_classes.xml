@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnScanQR"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/myClassesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="80dp"/> <!-- Leaves space for button -->
+
+    </ScrollView>
+
+    <!-- Scan QR Button Fixed at Bottom -->
+    <Button
+        android:id="@+id/btnScanQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📷 Scan Learner QR"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
